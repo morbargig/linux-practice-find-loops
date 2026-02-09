@@ -14,4 +14,5 @@ Use files inside: `../../lab/files`
 Run:
 ```bash
 ./find_basic.sh
+./find_advanced.sh
 ```
