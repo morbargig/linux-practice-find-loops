@@ -20,58 +20,58 @@ This lesson covers Linux user management, groups, permissions, and environment c
 
 ## Exercises (10 exercises, ~2.5 hours)
 
-1. **[ex-01-whoami-id](ex-01-whoami-id/)** - Identify yourself (~15 min)
+1. **[01-whoami-id](01-whoami-id/)** - Identify yourself (~15 min)
    - Use `whoami` and `id` commands
    - Understand UID, GID, and groups
    - Run: `./identity.sh`
 
-2. **[ex-02-passwd-group-files](ex-02-passwd-group-files/)** - Understand system users (~20 min)
+2. **[02-passwd-group-files](02-passwd-group-files/)** - Understand system users (~20 min)
    - Read `/etc/passwd` and `/etc/group`
    - Understand user/group file formats
    - Run: `./read_files.sh`
 
-3. **[ex-03-create-user](ex-03-create-user/)** - Create a new user (~25 min)
+3. **[03-create-user](03-create-user/)** - Create a new user (~25 min)
    - Use `useradd` to create users
    - Set passwords with `passwd`
    - Switch users with `su`
    - **Requires sudo** - Run: `./create_user.sh`
 
-4. **[ex-04-groups-membership](ex-04-groups-membership/)** - Manage groups (~25 min)
+4. **[04-groups-membership](04-groups-membership/)** - Manage groups (~25 min)
    - Create groups with `groupadd`
    - Add users to groups with `usermod -aG`
    - Verify group membership
    - **Requires sudo** - Run: `./manage_groups.sh`
 
-5. **[ex-05-sudo-basics](ex-05-sudo-basics/)** - Sudo basics (~20 min)
+5. **[05-sudo-basics](05-sudo-basics/)** - Sudo basics (~20 min)
    - Understand sudo vs root access
    - Run commands with elevated privileges
    - Check sudo logs
    - Run: `./sudo_demo.sh`
 
-6. **[ex-06-sudoers-safe](ex-06-sudoers-safe/)** - Safe sudo configuration (~15 min)
+6. **[06-sudoers-safe](06-sudoers-safe/)** - Safe sudo configuration (~15 min)
    - Use `visudo` safely
    - Understand sudoers file structure
    - Learn why syntax matters
    - **Reading/understanding task** (no script)
 
-7. **[ex-07-env-basics](ex-07-env-basics/)** - Environment variables (~20 min)
+7. **[07-env-basics](07-env-basics/)** - Environment variables (~20 min)
    - View environment variables (`env`, `printenv`)
    - Understand `USER`, `HOME`, `SHELL`, `PATH`
    - Compare environments between users
    - Run: `./env_vars.sh`
 
-8. **[ex-08-path-and-which](ex-08-path-and-which/)** - PATH debugging (~25 min)
+8. **[08-path-and-which](08-path-and-which/)** - PATH debugging (~25 min)
    - Use `which` and `command -v`
    - Understand how Linux finds commands
    - Modify PATH temporarily
    - Run: `./path_debug.sh`
 
-9. **[ex-09-env-in-scripts](ex-09-env-in-scripts/)** - Environment in scripts (~20 min)
+9. **[09-env-in-scripts](09-env-in-scripts/)** - Environment in scripts (~20 min)
    - Understand `export` vs local variables
    - Make variables available to child processes
    - Run: `./showenv.sh`
 
-10. **[ex-10-cron-env-gap](ex-10-cron-env-gap/)** - Cron environment gap (~25 min)
+10. **[10-cron-env-gap](10-cron-env-gap/)** - Cron environment gap (~25 min)
     - Understand why scripts fail in cron
     - Fix PATH issues in cron jobs
     - Use full paths and set environment safely
