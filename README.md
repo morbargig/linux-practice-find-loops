@@ -4,9 +4,10 @@ This repository is a hands-on practice project for Linux scripting fundamentals 
 
 **Lesson 01** - Bash Fundamentals: Tools, scripts, find, loops, conditions, debugging  
 **Lesson 02** - Intermediate Scripting: File operations, text processing, variables, functions, error handling  
-**Lesson 03** - Users & Environment: User management, groups, sudo, environment variables
+**Lesson 03** - Users & Environment: User management, groups, sudo, environment variables  
+**Lesson 04** - Permissions, Processes & Text Pipelines: File permissions, process management, disk usage, text processing
 
-## Lessons Overview (29 exercises total, ~8 hours)
+## Lessons Overview (38 exercises total, ~10.5 hours)
 
 ### [Lesson 01 – Bash Fundamentals](exercises/01-lesson-bash-fundamentals/) (10 exercises, ~2.5 hours)
 Learn the essential building blocks of bash scripting:
@@ -37,6 +38,17 @@ Master Linux user management and environment configuration:
 **Prerequisites:** Completion of Lessons 01 and 02  
 **See:** [exercises/03-lesson-users-environment/README.md](exercises/03-lesson-users-environment/README.md)
 
+### [Lesson 04 – Permissions, Processes & Text Pipelines](exercises/04-permissions-processes-text/) (9 exercises, ~2.5–3 hours)
+Essential system administration and text processing skills:
+- File permissions and ownership (`chmod`, `chown`, `chgrp`)
+- Process inspection and control (`ps`, `kill`, `jobs`)
+- Disk usage monitoring (`df`, `du`)
+- Text processing pipelines (`cut`, `sort`, `uniq`)
+- Basic `awk` scripting for reports
+
+**Prerequisites:** Completion of Lessons 01, 02, and 03  
+**See:** [exercises/04-permissions-processes-text/README.md](exercises/04-permissions-processes-text/README.md)
+
 ## Quick Start
 1) Clone
 ```bash
@@ -57,7 +69,11 @@ cd linux-practice-find-loops
 
 4) Check your work
 ```bash
+# Basic structure check
 ./scripts/check.sh
+
+# Run automated tests (requires secret file from instructor)
+./tests/run_tests.sh
 ```
 
 ## Rules
@@ -72,3 +88,4 @@ cd linux-practice-find-loops
   - `01-lesson-bash-fundamentals/`: Basic bash scripting (10 exercises)
   - `02-lesson-intermediate-scripting/`: Advanced scripting (9 exercises)
   - `03-lesson-users-environment/`: User management & environment (10 exercises)
+  - `04-permissions-processes-text/`: Permissions, processes & text processing (9 exercises)
